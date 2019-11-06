@@ -18,4 +18,3 @@ module ProgramCounter(dirin, clk, dirout);
         assign dir = dirin;
         assign dirout = dir;
 endmodule
-    
