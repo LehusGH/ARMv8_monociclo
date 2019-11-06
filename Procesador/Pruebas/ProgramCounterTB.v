@@ -17,9 +17,10 @@ module ProgramCounterTB;
 
     //Variamos el clk cada 10ns
     always #10 clk = ~clk;
+	 always #10 dirin = dirin + 1;
 
     initial begin
-        dirin = 64'b001;
-        #100
+        dirin = 64'b111;
+        #100;
     end
 endmodule
